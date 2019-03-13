@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Rajdhani');
+
+
+body{
+	text-align: center;
+	background-color: beige;
+	}
+#fish{
+	height: 98px;
+	width: 358px;
+	font-family: 'Rajdhani', sans-serif;
+	color: greenyellow ;
+	font-size: 26px;
+	position: absolute;
+	margin: 12px;
+	/*border: 1px solid;*/
+	/*border-color: gray;*/
+}
+#pult{
+	height: 308px;
+	width: 308px;
+	background-color: beige;
+	padding: 2px;
+	float: left;
+}
+#pool{
+	height: 308px;
+	width: 1000px;
+	background-color: black;
+	/*position: absolute;*/
+	padding: 2px;
+	border: 2px solid;
+	border-color: gray;
+	float: left;
+	text-align: left;
+}
+.bt{
+    width:60px;
+    height:60px;
+    background-color: white;
+    border-radius:50%;
+    border-width: 1px;
+    border-color: black;
+	text-align: center;
+	line-height: 75px;
+	clear: left;
+	margin-top: 70px;
+	font-family: 'Rajdhani', sans-serif;
+	color: maroon;
+	font-size: 48px;
+}
+.blr{
+    width:60px;
+    height:60px;
+    background-color: white;
+    border-radius:50%;
+    border-width: 1px;
+    border-color: black;
+	text-align: center;
+	line-height: 65px;
+	clear: left;
+	margin-top: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	margin-bottom: 0px;
+	font-family: 'Rajdhani', sans-serif;
+	color: maroon;
+	font-size: 48px;
+}
+.bb{
+    width:60px;
+    height:60px;
+    background-color: white;
+    border-radius:50%;
+    border-width: 1px;
+    border-color: black;
+	text-align: center;
+	line-height: 60px;
+	clear: left;
+	font-family: 'Rajdhani', sans-serif;
+	color: maroon;
+	font-size: 30px;
+}
