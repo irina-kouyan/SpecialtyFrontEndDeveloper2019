@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Электромобили</title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: Georgia;
+	}
+	header{
+		display: flex;
+		align-items: flex-end;
+		background-image: url('https://www.macdigger.ru/storage/app/media/news/2018/12/2/homepage-modelx.jpg');
+		background-position: center;
+		background-size: cover;
+		min-height: 300px;
+	}
+	header p{
+		background-color: rgba(255, 255, 255, 0.5);
+	}
+	.headerText{
+		display: flex;
+	}
+	 button{
+		background-color: rgb(145, 6, 9);
+		color: white;
+		font-weight: bold;
+		font-style: italic;
+		border-radius: 5px;
+		
+	}
+	img{
+		width: 30%;
+		height: 50%;
+		margin: 10px;
+		border-radius: 5px;
+		
+	}
+	.carDescription{
+		display: flex;
+		align-items: center;	
+	}
+	.h3{
+		margin-top: 10px;
+		align-self: flex-start;
+		font-weight: bold;
+	}
+	.commentSection{
+		color: white;
+		background-color: rgb(145, 6, 9);
+	}
+	.commentSection a{
+		color: white;
+		text-decoration: none;
+		margin: 2px;
+	}
+
+	.rightAside{
+		display: flex;
+		flex-direction: column;
+		background-color: rgb(233, 222, 204);
+		width: 25%;
+	}
+	.rightAside button{
+		display: block;
+		margin-top: 5px;
+	}
+	.siteBody{
+		display: flex;
+	}
+	article{
+		width: 75%;
+	}
+	input{
+		display: block;
+	}
+	form span{
+		color: rgb(145, 6, 9);
+	}
+	form, aside p, nav{
+		margin: 10px;
+	}
+	aside p, aside a, nav, nav a{
+		color: rgb(145, 6, 9);
+		text-decoration: none;
+	}
+	.form{
+		display: flex;
+		align-items: center;
+	}
+	.line{
+		height: 15px;
+		background-color: black;
+	}
+
+	@media (max-width: 1200px){
+		.form{
+			flex-direction: column;
+		}
+		.headerText p{
+			display: none;
+		}
+		aside p{
+			position: relative;
+			left: 40%;
+
+		}
+
+		.siteBody{
+			flex-direction: column;
+			width: 100%;
+			overflow: hidden;
+		}
+		.rightAside{
+			width: 100%;
+		}
+		article{
+			width: 100%;
+		}
+		.carDescription{
+			flex-direction: column;
+
+		}
+		img{
+			width: 100%;
+		}
+		
+
+	}
+	
+
+
+</style>
+<body>
+	<header>
+		<div class="headerText">
+			<p>Электромобиль — это инновационно, прогрессивно, удобно и в конце концов круто. Весь мир будто сошел с ума по электромобилям: презентации Tesla проходят круче чем концерты поп-звезд и уж точно собирают не меньше публики, топливные суперкары проигрывают на трассе обычным электрическим седанам, а Bugatti Chiron разгоняется медленнее чем электрический родстер и имеет коэффициент аэродинамики ниже чем у грузовика с электроприводом. Автомобильный мир уже точно не будет прежним!</p>
+			<button>Узнать больше</button>
+		</div>
+	</header>
+	<div class="line"></div>
+
+	<div class="siteBody">
+		<article>
+			<div>
+				<p class="h3">Tesla Model 3 Long Range<br/><small>Добавлено вчера by ElectroCars</small></p>
+				<div class="carDescription">
+					
+					<img src="https://hevcars.com.ua/wp-content/uploads/2018/07/tesla-model-3-performance-midnight-silver.jpg">
+					<p>Tesla Model 3 Long Range — это опциональная модификация «третьей модели» с увеличенным запасом хода, который в данной версии составляет 500 километров пробега на одном заряде по циклу EPA. Это вторая по уровню комплектация модели, которая имеет несколько отличий от базовой версии. Во-первых, динамика разгона до 100 км/ч в данной версии составляет 5,1 секунды, во-вторых максимальная скорость возросла до 225 км/ч, в-третьих предлагается более эффективное зарядное устройства с которым производительность зарядки составляет 59 километров в час от бытовой сети и 274 км в час от нагнетателей Tesla.</p>
+				</div>
+				<div class="commentSection">
+					<a href="#">Читать</a>
+					<a href="#">Комментарии</a>
+					<span><a href="#">Войдите</a> или <a href="#">Зарегистрируйтесь</a>, чтобы оставить комментарий</span>
+				</div>
+			</div>
+
+			<div>
+				<p class="h3">BMW i3 2018<br/><small>Добавлено вчера by ElectroCars</small></p>
+				<div class="carDescription">
+					
+					<img src="https://hevcars.com.ua/wp-content/uploads/2017/08/bmw-i3-94ah-exterior-2018-hevcars-17.jpg">
+					<p>i3 будет оснащен синхронным электродвигателем мощностью 125 кВт/170 л.с. с крутящим моментом в 250 Нм, обеспечивающим разгон автомобилю от 0 до 100 км всего за 7,3 секунды при достижении максимальной скорости 150 км/ч (ограничена электроникой).
+					Питается i3 от линейно-ионных высоковольтных напольных аккумуляторов, обеспечивающих запас хода от 290 до 300 километров по циклу NEDC, от 235 до 255 километров в соответствии с WLTP и до 200 километров в повседневном использовании.</p>
+				</div>
+				<div class="commentSection">
+					<a href="#">Читать</a>
+					<a href="#">Комментарии</a>
+					<span><a href="#">Войдите</a> или <a href="#">Зарегистрируйтесь</a>, чтобы оставить комментарий</span>
+				</div>
+			</div>
+
+			<div>
+				<p class="h3">Chevrolet Bolt EV<br/><small>Добавлено вчера by ElectroCars</small></p>
+				<div class="carDescription">
+					
+					<img src="https://hevcars.com.ua/wp-content/uploads/2017/05/chevrolet-bolt-ev-2017-exterior-hevcars-05.jpg">
+					<p>Chevrolet Bolt — полностью электрический автомобиль, разработанный компанией General Motors в сотрудничестве с LG Corporation и корейской студией GM (ранее Daewoo Korea) в 2016 году в США. Выпущен на рынок Европы в 2017 году под названием Opel Ampera-е.
+
+					Хэтчбек завоевал несколько наград и титулов — «Автомобиль 2017 года», «Зелёный автомобиль 2017 года», «Лучший автомобиль для покупки 2017», «Североамериканский автомобиль 2017 года».</p>
+				</div>
+				<div class="commentSection">
+					<a href="#">Читать</a>
+					<a href="#">Комментарии</a>
+					<span><a href="#">Войдите</a> или <a href="#">Зарегистрируйтесь</a>, чтобы оставить комментарий</span>
+				</div>
+			</div>
+		</article>
+
+		<div class="rightAside">
+			<aside>
+				<p class="h3">Войти</p>
+				<div class="form">
+					<form>
+						<label for="login">Логин <span>*</span></label><br/>
+						<input type="text" name="login" id="login" required>
+						<label for="password">Пароль <span>*</span></label><br/>
+						<input type="password" name="password" id="password" required>
+						
+					</form>
+					<div>
+						<a href="#">Создать профиль</a><br/>
+						<a href="#">Восстановить пароль</a>
+						<button type="submit">Войти</button>
+					</div>
+				</div>
+			</aside>
+			<nav>
+				<p class="h3">Навигация</p>
+				<a href="#">Форум</a><br/>
+				<a href="#">Последние новости</a>
+			</div>
+			</nav>
+		</div>
+	</div>
+</body>
+</html>

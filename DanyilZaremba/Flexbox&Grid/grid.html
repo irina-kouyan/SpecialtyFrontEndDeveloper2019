@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Grid</title>
+	<style type="text/css">
+		body{
+			background-image: url('https://i.pinimg.com/originals/52/c0/ac/52c0ac5b0bddff68bb33e2770312e134.jpg');
+			background-size: cover;
+			background-position: center;
+			
+		}
+		p:not(h1), h2{
+			text-align: center;
+			font-family: Georgia;
+		}
+		.grid{
+			display: grid;
+			grid-gap: 5px;
+			grid-template-areas: "header" "article" "aside" "nav" "footer";
+		}
+		header{
+			grid-area: header;
+		}
+		article{
+			grid-area: article;
+		}
+		aside{
+			grid-area: aside;
+		}
+		nav{
+			grid-area: nav;
+		}
+		footer{
+			grid-area: footer;
+		}
+		header h1, nav{
+			display: inline-block;
+			color: white;
+
+		}
+		h1{
+			font-style: italic;
+		}
+
+		nav{
+			display: flex;
+			align-items: center;
+			justify-content: space-around;
+		}
+		nav a{
+			font-size: 1.1rem;
+		}
+		
+		article{
+			background-color: rgba(255,255,255, 0.5);
+			border-radius: 5px;
+		}
+		footer img{
+			width: 100%;
+			height: 50%;
+			border-radius: 5px;
+
+		}
+		footer{
+			display: flex;
+			justify-content: center;
+			
+		}
+		footer div{
+			margin: 10px;
+			background-color: rgba(255,255,255, 0.5);
+			border-radius: 5px;
+		}
+
+		button{
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+			border-radius: 5px;
+			display: none;
+		}
+
+		@media (min-width: 1266px){
+			.grid{
+				grid-template-columns: 50% 50%;
+				grid-template-areas: "header nav"
+									"aside article"
+									"footer footer"
+			}
+		}
+		@media (max-width: 1266px){
+			.grid{
+				grid-template-columns: 1fr;
+				grid-template-areas: "header"
+										"nav"
+										"aside"
+										"article"
+										"footer"
+			}
+			nav{
+				margin-bottom: 10px;
+			}
+			aside img{
+				position: relative;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			footer{
+				display: flex;
+				flex-direction: column;
+			}
+			footer p+p, article p{
+				display: none;
+			}
+			button{display: block;}
+		}
+	</style>
+</head>
+<body>
+	<div class="grid">
+			<header>
+				<h1>Football.ua</h1>
+			</header>
+			<nav>
+				<a>Главная</a>
+				<a>Новости</a>
+				<a>Матчи и турниры</a>
+				<a>Видео</a>
+				<a>Фотогалереи</a>
+				<a>Футбол на ТВ</a>
+				<a>Блог</a>
+			</nav>
+
+			<aside>
+				<img src="https://s.ill.in.ua/i/news/630x373/386/386062.jpg">
+			</aside>
+
+			<article>
+				<h2>Зидан вернулся в Реал и рискует всей своей карьерой. Зачем?</h2>
+				<p>Француз уходил из старого замка, а вернулся в руины. Так в чем здесь логика и что теперь ждет Реал?Мог ли кто-то предположить что возвращение состоится настолько быстро? Давайте поразмыслим, что же вынудило Зидана принять предложение президента и рискнуть всей своей карьерой.</p>
+				<button>Читать</button>
+			</article>
+			
+			<footer>
+				
+				<div>
+					<img src="https://s.ill.in.ua/i/news/640x344/386/386075.jpg">
+					<p><b>Как Ювентус может удивить Атлетико?</b><br/><small>12 марта 2019</small></p>
+					<p>Сергей Шевченко — о возможных сюрпризах от Массимилиано Аллегри</p>
+					<button>Читать</button>
+				</div>
+				<div>
+					<img src="https://s.ill.in.ua/i/news/640x344/386/386108.jpg">
+					<p><b>Роналду — единственный игрок, который все еще может выиграть четыре ЛЧ подряд</b><br/><small>12 марта 2019</small></p>
+					<p>Форвард Криштиану Роналду может стать обладателем четырех титулов победителя Лиги чемпионов.</p>
+					<button>Читать</button>
+				</div>
+				<div>
+					<img src="https://s.ill.in.ua/i/news/630x373/386/386107.jpg">
+					<p><b>Гюнеш: Кариус не чувствует себя частью команды</b><br/><small>12 марта 2019</small></p>
+					<p>Наставник Бешикташа раскритиковал немецкого голкипера.</p>
+					<button>Читать</button>
+				</div>
+				<div>
+					<img src="https://s.ill.in.ua/i/news/630x373/386/386105.jpg">
+					<p><b>Ди Франческо летом может возглавить Фиорентину</b><br/><small>12 марта 2019</small></p>
+					<p>Похоже, специалист на долго без работы не останется.</p>
+					<button>Читать</button>
+				</div>
+			</footer>
+	</div>
+
+</body>
+</html>
