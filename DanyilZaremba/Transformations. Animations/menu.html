@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Меню</title>
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+
+
+	<style type="text/css">
+	*{
+		margin: 0;
+		padding: 5px;
+	}
+	ul{
+		list-style-type: none;
+	}
+	.submenu1{
+		opacity: 0;
+		transition: all 0.5s linear;
+		transform: translateX(-5%);
+
+	}
+	.submenu1 li, .submenu2 li , .submenu3 li{
+		background-color: #C40233;
+		border: 1px solid black;
+		
+
+	}
+	 a{
+		text-decoration: none;
+		color: #FF8C00;
+		border-radius: 5px;
+		font-weight: bold;
+		font-family: 'Lobster', cursive;
+
+	}
+	.menu1 a, .menu2 a, .menu3 a{
+		font-size: 1.5rem;
+	}
+	.menu1 li:hover .submenu1{
+		opacity: 1;
+
+	}
+	.submenu2{
+		transform: scaleY(0);
+		transition: transform 1s;
+
+	}
+
+	.menu2 li:hover .submenu2{
+		transform: scaleY(1);
+	}
+	
+	.container{
+		display: flex;
+		background-image: url('https://experienceluxury.co/wp-content/uploads/2016/08/private-cinema.jpg');
+		background-size: cover;
+		background-position: center;
+		justify-content: space-between;
+	}
+	h1, h2{
+		color: #FF8C00;
+		
+		width: 100%;
+		margin-left: 10px;
+	}
+	h1{
+		font-family: 'Monoton', cursive;
+
+	}
+	h2{
+		font-family: 'Lobster', cursive;
+	}
+	
+	.submenu3 li{
+		
+		opacity: 0;
+
+	}
+	.menu3 li:hover .submenu3 li:nth-child(1){
+		animation: displayBooks 0.5s;
+		animation-fill-mode: forwards;
+
+	}
+	.menu3 li:hover .submenu3 li:nth-child(2){
+		animation: displayBooks 0.5s;
+		animation-fill-mode: forwards;
+		animation-delay: 0.5s;
+		
+	}
+	.menu3 li:hover .submenu3 li:nth-child(3){
+		animation: displayBooks 0.5s;
+		animation-fill-mode: forwards;
+		animation-delay: 1s;
+		
+	}
+	.menu3 li:hover .submenu3 li:nth-child(4){
+		animation: displayBooks 0.5s;
+		animation-fill-mode: forwards;
+		animation-delay: 1.5s;
+		
+	}
+	.menu3 li:hover .submenu3 li:nth-child(5){
+		animation: displayBooks 0.5s;
+		animation-fill-mode: forwards;
+		animation-delay: 2s;
+		
+	}
+	.menu3 li:hover .submenu3 li:nth-child(6){
+		animation: displayBooks 0.5s;
+		animation-fill-mode: forwards;
+		animation-delay: 2.5s;
+		
+	}
+	.menu3 li:hover .submenu3 li:nth-child(7){
+		animation: displayBooks 0.5s;
+		animation-fill-mode: forwards;
+		animation-delay: 3s;
+		
+	}
+	.menu3 li:hover .submenu3 li:nth-child(8){
+		animation: displayBooks 0.5s;
+		animation-fill-mode: forwards;
+		animation-delay: 3.5s;
+		
+	}
+	.menu3 li:hover .submenu3 li:nth-child(9){
+		animation: displayBooks 0.5s;
+		animation-fill-mode: forwards;
+		animation-delay: 4s;
+		
+	}
+	.menu3 li:hover .submenu3 li:nth-child(10){
+		animation: displayBooks 0.5s;
+		animation-fill-mode: forwards;
+		animation-delay: 4.5s;
+		
+	}
+
+	@keyframes displayBooks{
+		0%{opacity: 0;}
+		100%{opacity: 1;}
+	}
+	.nav{
+		display: flex;
+		margin-left: 20px;
+	}
+
+		
+	</style>
+	
+	
+</head>
+<body>
+
+	<div class="container">
+		<div class="title">
+			<h1>Dosug.ua</h1>
+			<h2>Территория твоего досуга</h2>
+		</div>
+		<div class="nav">
+	<ul class="menu1">
+		<li><a href="#">Фильмы</a>
+			<ul class="submenu1">
+				<li><a href="#">Комедии</a></li>
+				<li><a href="#">Боевики</a></li>
+				<li><a href="#">Драмы</a></li>
+				<li><a href="#">Военные</a></li>
+				<li><a href="#">Исторические</a></li>
+				<li><a href="#">Мультфильмы</a></li>
+				<li><a href="#">Вестерны</a></li>
+				<li><a href="#">Детективные</a></li>
+				<li><a href="#">Документальные</a></li>
+			</ul>
+		</li>
+	</ul>
+
+	<ul class="menu2">
+		<li><a href="#">Сериалы</a>
+				<ul class="submenu2">
+					<li><a href="#">Новые</a></li>
+					<li><a href="#">Зарубежные</a></li>
+					<li><a href="#">Отечественные</a></li>
+					
+				</ul>
+		</li>
+	</ul>
+	<ul class="menu3">
+		<li><a href="#">Книги</a>
+			<ul class="submenu3">
+				<li><a href="#">Зарубежная литература</a></li>
+				<li><a href="#">Классика</a></li>
+				<li><a href="#">Детективы</a></li>
+				<li><a href="#">Фантастика</a></li>
+				<li><a href="#">Современная проза</a></li>
+				<li><a href="#">Наука и образование</a></li>
+				<li><a href="#">Психология</a></li>
+				<li><a href="#">Детские книги</a></li>
+				<li><a href="#">Справочники</a></li>
+				<li><a href="#">Аудиокниги</a></li>
+			</ul>
+		</li>
+	</ul>
+	</div>
+
+	</div>
+	
+
+</body>
+</html>
