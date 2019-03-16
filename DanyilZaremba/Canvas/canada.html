@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Флаг</title>
+	<style type="text/css">
+		#canvas{
+			height: 600px;
+			width: 600px;
+			border: 2px solid black;
+		}
+	</style>
+</head>
+
+<body>
+	<canvas id="canvas"></canvas>
+
+	<script type="text/javascript">
+		var canvas = document.getElementById('canvas');
+		var context = canvas.getContext("2d");
+		var leaf = new Image();
+		leaf.src = "mapleLeaf.png"
+		context.save();
+
+		leaf.onload = function(){
+			var angle = 10 * Math.PI/180;
+			context.rotate(angle);
+			context.drawImage(leaf, 88, 20, 55, 45);
+
+		};
+		context.restore();
+
+		
+		context.translate(50, 0);
+
+		context.lineWidth = 3;
+		context.strokeStyle = "black";
+		context.fillStyle = "red";
+		
+		context.beginPath();
+		context.moveTo(0, 50);
+		context.bezierCurveTo(122, 5, 139, 70, 200, 50);
+		context.lineTo(200, 110);
+		context.bezierCurveTo(163, 120, 67, 46, 0, 110);
+		context.closePath();
+		context.stroke();
+		context.fill();
+
+		
+		
+		context.clearRect(60,5, 90, 100);
+		
+		context.stroke();
+
+
+		context.moveTo(0, 50);
+		context.lineTo(0, 200);
+
+		context.stroke();
+
+
+	</script>
+
+</body>
+</html>
