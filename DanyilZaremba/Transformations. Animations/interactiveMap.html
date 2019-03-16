@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<title>Интерактивная карта</title>
+	 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+   integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+   integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+   crossorigin=""></script>
+   <style type="text/css">
+   body{
+   	display: flex;
+   	justify-content: center;
+   	background-image: url('https://www.incontinencesupermarket.co.uk/blog/wp-content/uploads/2017/05/travelling.jpg');
+   	background-size: cover;
+   	background-position: center;
+   	
+   	
+   }
+   	#map{
+   		height: 500px;
+   		width: 800px;
+   		border: 3px solid black;
+   		border-radius: 5px;
+   	}
+   	.redIcon{
+   		background-color: tomato;
+   		border-radius: 50%;
+   		animation: pulse 1s linear infinite;
+   		
+   	}
+   	.redIcon:hover{
+   		animation-play-state: paused;
+
+   	}
+
+   	@keyframes pulse{
+   		0%{opacity: 0;}
+   		
+   		100%{opacity: 1;}
+   	}
+   	
+   </style>
+</head>
+<body>
+ <div id="map"></div>
+ 
+
+<script type="text/javascript">
+	var map = L.map('map').setView([49.8162581, 7.0331716], 4.99);
+	
+	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a rel="nofollow" href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+	}).addTo(map);
+
+	var redCircle = L.divIcon({
+    iconSize: [10, 10],        
+    className: 'redIcon'
+	});
+
+	//Warsaw	
+	L.marker([52.232387, 21.008992], {icon: redCircle}).addTo(map).bindTooltip("Купить билеты");
+	//Paris	
+	L.marker([48.854295, 2.351520], {icon: redCircle}).addTo(map).bindTooltip("Купить билеты");
+	//Berlin
+	L.marker([52.521300, 13.393216], {icon: redCircle}).addTo(map).bindTooltip("Купить билеты");
+	//London
+	L.marker([51.507542, -0.134685], {icon: redCircle}).addTo(map).bindTooltip("Купить билеты");
+	//Wien
+	L.marker([48.209081, 16.376594], {icon: redCircle}).addTo(map).bindTooltip("Купить билеты");
+	//Dublin
+	L.marker([53.348375, -6.264865], {icon: redCircle}).addTo(map).bindTooltip("Купить билеты");
+
+
+	
+	 
+        
+	
+</script>
+</body>
+</html>
