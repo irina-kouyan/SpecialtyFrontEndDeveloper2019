@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My first landing page</title>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+	integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+	crossorigin=""/>
+	<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+	integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+	crossorigin=""></script>
+    <link rel="icon" href="../img/monitor.ico" type="image/x-icon" />
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<header>
+		<h1>MY HELLO WORLD PAGE</h1>
+		<div class="btnContainer">
+			<button>HTML5</button>
+			<button>CSS3</button>
+			<button>JS</button>
+		</div>
+	</header>
+	<article>
+		<section class="myNameIs">
+			<div class="aboutLeft">
+				<h2>Danyil Zaremba<br/>Aspiring Front-end Developer</h2>
+				<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis, dolorem rerum hic sed, necessitatibus laboriosam nulla iste et assumenda dicta ab quam repudiandae recusandae, autem suscipit? Accusantium dolorem in nemo.</p>
+			</div>
+			
+			<img src=".\img\abb.jpg">
+		</section>
+		<section class="contactForm">
+			<form action="https://formspree.io/fridayman@i.ua" method="POST">
+				<input type="text" name="name" placeholder="Name">
+				<input type="tel" name="phoneNumber" placeholder="Phone Number">
+				<input type="email" name="e-mail" placeholder="E-mail">
+				<button type="submit">Call me!</button>
+			</form>
+		</section>
+		<section class="imgGrid">
+			<div id="item1"><span>hello item</span></div>
+			<div id="item2"><span>hello item</span></div>
+			<div id="item3"><span>hello item</span></div>
+			<div id="item4"><span>hello item</span></div>
+			<div id="item5"><span>hello item</span></div>
+			<div id="item6"><span>hello item</span></div>
+			<div id="item7"><span>hello item</span></div>
+			<div id="item8"><span>hello item</span></div>
+
+		</section>
+		<h2>Are you ready to read my blog?</h2>
+		<section class="blogContainer">
+			
+			<div class="blogInfo1">
+				<div class="blogImg1"></div>
+				<div class="blogText">
+					<p>Blog info text</p>
+					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione, adipisci inventore dolore, placeat nihil neque soluta</p>
+				</div>
+			</div>
+			<div class="blogInfo2">
+					<div class="blogImg2"></div>
+					<div class="blogText">
+						<p>Blog info text</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione, adipisci inventore dolore, placeat nihil neque soluta</p>
+					</div>
+				</div>
+
+				<div class="blogVideo">
+						
+					<iframe src="https://www.youtube.com/embed/mzPxo7Y6JyA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					<div class="blogText">
+						<p>Blog info text</p>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione, adipisci inventore dolore, placeat nihil neque soluta</p>
+					</div>	
+				</div>
+				<div class="blogMap">
+						<div id="map"></div>
+						<div class="blogText">
+							<p>Blog info map</p>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+						</div>
+				</div>
+
+				<div class="blogInfo3">
+						<div class="blogImg3"></div>
+						<div class="blogText">
+							<p>Blog info text</p>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione, adipisci inventore dolore, placeat nihil neque soluta</p>
+						</div>
+				</div>
+
+				<div class="blogInfo4">
+						<div class="blogImg4"></div>
+						<div class="blogText">
+							<p>Blog info text</p>
+							<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur ratione, adipisci inventore dolore, placeat nihil neque soluta</p>
+						</div>
+					</div>
+					
+		</section>
+		<button id="blogBtn">View blog</button>
+	</article>
+	<footer>
+		<p>My first<br/>"Hello World"</p>
+		<img src=".\img\facebook.png">
+		<img src=".\img\instagram.png">
+		<img src=".\img\telegram.png">
+		<img src=".\img\twitter.png">
+
+	</footer>
+	<script type="text/javascript">
+	var map = L.map('map').setView([50.448664, 30.602800], 13);
+	var marker = L.marker([50.448664, 30.602800]).addTo(map).bindTooltip("CyberBionic Systematics", {offset:[10, 120]});
+	
+	
+	L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+	</script>
+</body>
+</html>

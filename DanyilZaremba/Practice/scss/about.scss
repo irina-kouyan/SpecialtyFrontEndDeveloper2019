@@ -1,0 +1,11 @@
+.myNameIs{
+    display: flex;
+    justify-content: center;
+    img{
+        transform: scale(0.8);
+    }
+}
+.aboutLeft{
+    border-right: 1px solid grey;
+    padding: 5%;
+}
