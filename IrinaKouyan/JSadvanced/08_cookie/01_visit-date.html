@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Домашка (JSadvanced-8a) Куян</title>
+    <meta charset="utf-8">
+</head>
+<body>
+	<button id="setVisitDate" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)">Remember date of my last visit</button>
+	<br/>
+	<div id="visitBefore" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, 100%)">…</div>
+	<script type="text/javascript">
+		var dateString = encodeURIComponent( String( new Date() ) );
+		var setCookie = document.getElementById("setVisitDate").onclick = function(){
+			document.cookie = "visitDate=" + dateString + "; max-age=2678400";
+		};
+		var decodedCookie = decodeURIComponent( document.cookie.replace("visitDate=", "") );
+		var visitBefore = document.getElementById("visitBefore");
+		visitBefore.innerHTML = "Your previous visit was at " + decodedCookie;
+	</script>
+</body>
+</html>
