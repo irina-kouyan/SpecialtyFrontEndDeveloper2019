@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Домашка (JSadvanced-9d) Куян</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="data">
+		<form>
+			<fieldset>
+				<legend>Input your incomes</legend>
+					<label for="January">January</label><br />
+					<input type="range" min="10" max="105" step="5" value="" name="January" class="slider" id="JanuaryInput" oninput="JanuaryOutput.value = JanuaryInput.value">
+					<output id="JanuaryOutput"></output>
+				<br />
+					<label for="February">February</label><br />
+					<input type="range" min="10" max="105" step="5" value="" name="February" class="slider" id="FebruaryInput" oninput="FebruaryOutput.value = FebruaryInput.value">
+					<output id="FebruaryOutput"></output>
+				<br />
+					<label for="March">March</label><br />
+					<input type="range" min="10" max="105" step="5" value="" name="March" class="slider" id="MarchInput" oninput="MarchOutput.value = MarchInput.value">
+					<output id="MarchOutput"></output>
+				<br />
+					<label for="April">April</label><br />
+					<input type="range" min="10" max="105" step="5" value="" name="April" class="slider" id="AprilInput" oninput="AprilOutput.value = AprilInput.value">
+					<output id="AprilOutput"></output>
+			</fieldset>
+			<button type="submit">Chart it!</button>
+		</form>
+	</div>
+	<canvas id="chartContainer"></canvas>
+	<script type="text/javascript" src="js/charts.js"></script>
+</body>
+
+</html>
